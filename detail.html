@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="detail-title">Подробная новость</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .detail-header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+        .detail-header h1 {
+            color: #004d99;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .detail-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .detail-content {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+        }
+        .detail-content figure {
+            margin: 30px 0;
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .detail-content figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .detail-sub-image {
+            max-width: 80%;
+            height: auto;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            color: #ff5722;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>GeoNews</h1>
+        <a href="index.html" id="back-to-home" class="read-more">← На главную</a>
+    </header>
+
+    <main class="container">
+        <div id="news-detail-content">
+        </div>
+    </main>
+
+    <script src="js.js"></script>
+    <script>
+        loadNewsDetail();
+    </script>
+</body>
+</html>
