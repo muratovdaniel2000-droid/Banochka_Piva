@@ -61,7 +61,7 @@ async function fetchContentData() {
 
 function getCountryCodeFromCoords(lat) {
     if (lat > 40 && lat < 50) { 
-        return { code: DEFAULT_REGION_KEY, name: 'Мир' };
+        return { code: KZ, name: 'Казахстан' };
     }
     
     return { code: DEFAULT_REGION_KEY, name: 'Мир' };
@@ -78,7 +78,7 @@ async function loadGeoNews() {
     const loadDefault = (reason = 'Ошибка геолокации') => {
         console.warn(`Загрузка новостей по умолчанию: ${reason}`);
         const defaultNews = allNews[DEFAULT_REGION_KEY] || [];
-        renderNews(defaultNews, 'Мир (по умолчанию)');
+        renderNews(defaultNews, 'Мира');
     };
 
     if (!navigator.geolocation) {
