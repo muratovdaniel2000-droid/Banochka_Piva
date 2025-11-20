@@ -61,7 +61,7 @@ async function fetchContentData() {
 
 function getCountryCodeFromCoords(lat) {
     if (lat > 40 && lat < 50) { 
-        return { code: KZ, name: 'Казахстан' };
+        return { code: 'KZ', name: 'Казахстан' };
     }
     
     return { code: DEFAULT_REGION_KEY, name: 'Мир' };
